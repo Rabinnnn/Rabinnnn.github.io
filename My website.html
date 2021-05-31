@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "utf-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+  <link rel = "stylesheet" type ="text/css" href = "../CSS/My website styles.css">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>My website</title>
+</head>
+<body>
+
+
+
+/*top navigation*/
+   <div class = "topnav">
+      <a class = "active" href = "#home">Home</a>
+      <a href = "Certifications.html">Certifications</a>
+      <a href = "Portfolio.html">Portfolio</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Contacts
+          <i class = "fa fa-caret-down"></i>
+        </button>
+        <div class = "dropdown-content" id = "myDropdown">
+          <p>Name: Rabin Otieno</p>
+          <p>E-mail: rabinyitzahck@gmail.com</p>
+          <p>Phone: 0707954732</p>
+        </div>
+      </div>
+      <div class = "icons">
+      <a href = "#fb"><img src="../Images/facebook.png"></img></a>
+      <a href="#insta"><img src="../Images/instagram.png"></img></a>
+      <a href="twitter"><img src="../Images/twitter.png"></img></a>
+      <a href="li"><img src="../Images/linkedin.png"></img></a>
+    </div>
+
+   </div>
+/*background image*/
+   <div class="container">
+  <img src="../Images/lake-victoria-fishing.jpg" alt="background-image" style="width:100%;">
+
+  <div class="content">
+    <h1>About me</h1>
+    <p>My name is Rabin Otieno.</br> I'm a recent graduate with skills in
+    both </br>hardware and software aspects of Computer Technology and IT, </br>including instrumentation. </p>
+  </div>
+
+  <div class = "bars">
+    <h1>Skills</h1>
+    <p>Web Development</p><div class="web">90%</div>
+    <p>Android Development</p><div class="android">70%</div>
+    <p>Database Languages</p><div class="database">60%</div>
+    <p>Graphics Design</p><div class="graphics">50%</div>
+    <p>Instrumentation</p><div class="instrumentation">40%</div>
+
+</div>
+
+<div class = "interests">
+  <ul>
+    <h1>Intrests</h1>
+    <li>Learning new technologies</li></br></br>
+    <li>Enjoying creative arts</li></br></br>
+    <li>Conserving the environment</li></br></br>
+    <li>Exercising</li></br></br>
+    <li>Recreation</li>
+
+  </ul>
+</div>
+<div class = "footer">
+<footer><p>
+	&copy;Rabin Otieno. All rights reserved.
+</p></footer></div>
+</div>
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+
+
+</body>
+</html>
